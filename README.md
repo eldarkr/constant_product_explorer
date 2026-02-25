@@ -24,16 +24,20 @@ constant_product_explorer/
 ## Formula explanation (`amountOut`)
 
 Constant-product formula
+
 $$xy = k$$
 
 To swap $x$ with $y$ 
+
 $$ (x + dx)(y - dy) =k=xy$$
 
 Let's find $dy$
+
 $$ y - dy = \dfrac{xy}{x+dx} 
 \implies dy = y - \dfrac{xy}{x+dx} = \dfrac{xy + ydx - xy}{x+dx} = \dfrac{ydx}{x+dx} $$
 
 But, we also have fee, let's consider $dx_{net} = dx \cdot (1 - fee)$
+
 $$ dy = \dfrac{ydx_{net}}{x+dx_{net}} $$
 
 
